@@ -31,7 +31,7 @@ category:            Concurrency, Control
 build-type:          Simple
 extra-source-files:  README.md, CHANGELOG.md
 cabal-version:       >=1.10
-tested-with:         GHC == 8.6.5 || == 8.8.4 || == 8.10.7 || == 9.0.2 || == 9.2.1
+tested-with:         GHC == 8.6.5 || == 8.8.4 || == 8.10.7 || == 9.0.2 || == 9.2.8 || == 9.4.8 || == 9.6.7 || == 9.10.3 || == 9.12.2
 
 source-repository head
   type:     git
