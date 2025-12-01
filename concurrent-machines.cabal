@@ -56,14 +56,12 @@ library
                        ScopedTypeVariables
   build-depends:       base >= 4.8 && < 5,
                        monad-control >= 1.0 && < 1.1,
-                       transformers >= 0.4 && < 0.7,
                        time >= 1.4 && < 1.16,
                        containers >= 0.5 && < 0.8,
                        transformers-base >= 0.4 && < 0.5,
                        machines >= 0.5 && < 0.8,
                        async >= 2.0.1 && < 2.3,
-                       lifted-async >= 0.1 && < 0.11,
-                       semigroups >= 0.8 && < 0.21
+                       lifted-async >= 0.1 && < 0.11
   hs-source-dirs:      src
   default-language:    Haskell2010
   ghc-options: -Wall
@@ -74,8 +72,8 @@ test-suite tests
   main-is: AllTests.hs
   ghc-options: -Wall -threaded
   default-language: Haskell2010
-  build-depends: base, concurrent-machines, machines,
-                 tasty, tasty-hunit, transformers, time
+  build-depends: base, concurrent-machines,
+                 tasty, tasty-hunit, time
 
 -- This is a nice modification of the tests that generates plots for
 -- visualizing the execution of parallel processes using the splot
@@ -92,7 +90,7 @@ test-suite splotime
   ghc-options: -Wall -O0
   default-language: Haskell2010
   if flag(splot)
-    build-depends: base, concurrent-machines, machines,
+    build-depends: base, concurrent-machines,
                    process, tasty, tasty-hunit, transformers, time
 
 benchmark fanout
