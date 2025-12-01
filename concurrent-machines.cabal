@@ -58,7 +58,7 @@ library
                        monad-control >= 1.0 && < 1.1,
                        transformers >= 0.4 && < 0.7,
                        time >= 1.4 && < 1.14,
-                       containers >= 0.5 && < 0.7,
+                       containers >= 0.5 && < 0.8,
                        transformers-base >= 0.4 && < 0.5,
                        machines >= 0.5 && < 0.8,
                        async >= 2.0.1 && < 2.3,
