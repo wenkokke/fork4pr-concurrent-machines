@@ -11,7 +11,6 @@ import Data.Time.Clock (UTCTime, addUTCTime, diffUTCTime, getCurrentTime)
 import Text.Printf (printf)
 import Data.Time.Format (defaultTimeLocale, formatTime, readPTime)
 import System.Exit (ExitCode (ExitSuccess), exitSuccess)
-import System.IO (writeFile)
 import qualified System.Process as Proc
 import Text.ParserCombinators.ReadP (readP_to_S)
 
